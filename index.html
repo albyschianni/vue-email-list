@@ -12,10 +12,13 @@
 <body>
     
 
-    <div id="app">
+    <div id="app" class="container">
 
-        <div v-if="arrEmails.length > 9">
-            {{arrEmails}}
+        <div v-if="arrEmails.length > 9" class="email-container">
+            <div class="titolo">- Email List -</div>
+            <ul v-for="(element) in arrEmails">
+                <li>{{element}}</li>
+            </ul>
         </div>
 
     </div>
